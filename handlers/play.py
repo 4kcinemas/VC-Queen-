@@ -98,7 +98,7 @@ async def play(_, message: Message):
     global que
     global useer
 
-    lel = await message.reply("» sᴇᴀʀᴄʜɪɴɢ... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ🔎")
+    lel = await message.reply("» sᴇᴀʀᴄʜɪɴɢ... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ BAKA🔎")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -118,24 +118,24 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>» ꜰɪʀsᴛʟʏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ʙᴀʙʏ</b>")
+                        "<b>» ꜰɪʀsᴛʟʏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ BAKA</b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "» ʜᴇʏ ʙᴀʙʏ, ɪ'ᴍ ʜᴇʀᴇ, ᴛʜᴀɴᴋs ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ ᴍᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴀʙʏ")
+                        message.chat.id, "» ʜᴇʏ BAKA, ɪ'ᴍ ʜᴇʀᴇ, ᴛʜᴀɴᴋs ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ ᴍᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ BAKA")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ, sᴇɴᴅ /play ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
+                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ BAKA, sᴇɴᴅ /play ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>» ᴜsᴇʀʙᴏᴛ ɢᴏᴛ ꜰʟᴏᴏᴅᴡᴀɪᴛ ʙᴀʙʏ, ɢᴏɪɴɢ ᴛᴏ sʟᴇᴇᴘ ꜰᴏʀ sᴇᴄᴏɴᴅs, ᴍᴀᴋᴇ sᴜʀᴇ ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ʙᴀɴɴᴇᴅ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ.</i>")
+            f"<i>» ᴜsᴇʀʙᴏᴛ ɢᴏᴛ ꜰʟᴏᴏᴅᴡᴀɪᴛ BAKA, ɢᴏɪɴɢ ᴛᴏ sʟᴇᴇᴘ ꜰᴏʀ sᴇᴄᴏɴᴅs, ᴍᴀᴋᴇ sᴜʀᴇ ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ʙᴀɴɴᴇᴅ ɪɴ ᴛʜɪs ᴄʜᴀᴛ BAKA.</i>")
         return
     
     audio = (
@@ -148,12 +148,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» sᴏʀʀʏ BAKA, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
             )
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/9fc0515a16d6d85bf42c5.jpg"
+        thumb_name = "https://telegra.ph/file/9732e7d8ecc717f1d5f58.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -162,11 +162,11 @@ async def play(_, message: Message):
              [
                 [
                     InlineKeyboardButton(
-                            text="😘ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/anonymous_was_bot"),
+                            text="c?ᴄʀᴇᴀᴛᴏʀ",
+                            url=f"https://t.me/voidxtoxic"),
                         InlineKeyboardButton(
-                            text="💔ɢʀᴏᴜᴘ",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            text="ɢʀᴏᴜᴘ",
+                            url=f"https://t.me/horimiya_family")
                    
                 ]
             ]
@@ -204,11 +204,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="😘ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/anonymous_was_bot"),
+                            text="ᴄʀᴇᴀᴛᴏʀ",
+                            url=f"https://t.me/voidxtoxic"),
                         InlineKeyboardButton(
-                            text="💔ɢʀᴏᴜᴘ",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            text="ɢʀᴏᴜᴘ",
+                            url=f"https://t.me/horimiya_family")
                    
                 ]
             ]
@@ -216,18 +216,18 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/9fc0515a16d6d85bf42c5.jpg"
+            thumb_name = "https://telegra.ph/file/9732e7d8ecc717f1d5f58.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                            text="😘ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/anonymous_was_bot"),
+                            text="ᴄʀᴇᴀᴛᴏʀ",
+                            url=f"https://t.me/voidxtoxic"),
                         InlineKeyboardButton(
-                            text="💔ɢʀᴏᴜᴘ",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            text="ɢʀᴏᴜᴘ",
+                            url=f"https://t.me/horimiya_family")
                    
                 ]
             ]
@@ -280,11 +280,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="😘ᴄʀᴇᴀᴛᴏʀ",
-                            url=f"https://t.me/anonymous_was_bot"),
+                            text="ᴄʀᴇᴀᴛᴏʀ",
+                            url=f"https://t.me/voidxtoxic"),
                         InlineKeyboardButton(
-                            text="💔ɢʀᴏᴜᴘ",
-                            url=f"https://t.me/DevilsHeavenMF")
+                            text="ɢʀᴏᴜᴘ",
+                            url=f"https://t.me/horimiya_family")
                    
                 ]
             ]
