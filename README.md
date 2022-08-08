@@ -56,7 +56,7 @@
 ## Heroku Deployment 🚀
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot more stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AnonymousBoy1025/FallenMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/4kcinemas/VC-Queen-)
 
 ## ᴅᴇᴘʟᴏʏ ᴏɴ ᴠᴘꜱ ꜱᴇʀᴠᴇʀ 📡
 
